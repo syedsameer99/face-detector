@@ -19,22 +19,27 @@ const styles = () => ({
     }
   },
   paper: {
-    marginTop: 100,
+    marginTop: 150,
     display: "flex",
     padding: 20,
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: "transparent",
+    border: "1px solid black"
   },
   avatar: {
     marginLeft: "auto",
     marginRight: "auto",
-    backgroundColor: "#f50057"
+    backgroundColor: "black",
+    // border: "1px solid black",
   },
+  
   form: {
     marginTop: 1
+
   },
   errorText: {
-    color: "#f50057",
+    color: "black",
     marginBottom: 5,
     textAlign: "center"
   }
@@ -69,7 +74,7 @@ class Login extends Component {
             <Avatar className={classes.avatar}>
               <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
+            <Typography  component="h1" variant="h5">
               Sign in
             </Typography>
             <TextField
@@ -84,6 +89,7 @@ class Login extends Component {
             <TextField
               variant="outlined"
               margin="normal"
+              // border="1px solid black"
               fullWidth
               name="password"
               label="Password"
@@ -98,9 +104,9 @@ class Login extends Component {
             )}
             <Button
               type="button"
-              fullWidth
-              variant="contained"
-              color="primary"
+              // fullWidth
+              //  variant="black"
+              // color="white"
               className={classes.submit}
               onClick={this.handleSubmit}
             >
