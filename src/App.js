@@ -26,18 +26,20 @@ const params = {
 function App(props) {
   const { isAuthenticated, isVerifying } = props;
   return (
-    <Home/>
-    // <Switch>
-    //   {/* <Particles params={params} className="particles" /> */}
-    //   <ProtectedRoute
-    //     exact
-    //     path="/"
-    //     component={Home}
-    //     isAuthenticated={isAuthenticated}
-    //     isVerifying={isVerifying}
-    //   />
-    //   <Route path="/login" component={Login} />
-    // </Switch>
+    <div>
+     {/* <Home/> */}
+    {/* <Switch> */}
+      {/* <Particles params={params} className="particles" /> */}
+      {/* <ProtectedRoute
+        exact
+        path="/"
+        component={Home}
+        isAuthenticated={isAuthenticated}
+        isVerifying={isVerifying}
+      />
+      <Route path="/login" component={Login} />
+    </Switch> */}
+    </div>
   );
 }
 

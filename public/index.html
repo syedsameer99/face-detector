@@ -18,6 +18,22 @@
     <link href="https://fonts.googleapis.com/css?family=Bigelow+Rules&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      canvas {
+        position: absolute;
+      }
+  </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -31,6 +47,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <video class="video" id="video" width="720" height="560" autoplay muted></video>
     <div id="root"></div>
 
     <!--<h1>helllooooyyyu</h1>-->

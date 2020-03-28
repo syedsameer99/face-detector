@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Script.css";
+import * as faceapi from "face-api.js";
 
 export class Script extends Component {
   constructor(props) {
@@ -17,10 +18,10 @@ export class Script extends Component {
 
   render() {
     Promise.all([
-      faceapi.nets.tinyFaceDetector.loadFromUri("../../../public/models"),
-      faceapi.nets.faceLandmarkNet.loadFromUri("../../../public/models"),
-      faceapi.nets.faceRecognitionNet.loadFromUri("../../../public/models"),
-      faceapi.nets.faceExpressionNet.loadFromUri("../../../public/models")
+      faceapi.nets.tinyFaceDetector.loadFromUri("../../models"),
+      faceapi.nets.faceLandmarkNet.loadFromUri("../../models"),
+      faceapi.nets.faceRecognitionNet.loadFromUri("../../models"),
+      faceapi.nets.faceExpressionNet.loadFromUri("../../models")
     ]).then(this.videoTag);
 
     this.videoTag.addEventListner("play", () => {
